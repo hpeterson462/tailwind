@@ -48,7 +48,7 @@ export default function Projects() {
           <IoIosArrowDown size={30} />
         </div>
         <div className="h-52 w-52 relative cursor-pointer mb-5">
-          <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
+          <div className="absolute inset-0 text-center bg-white opacity-25 rounded-lg shadow-2xl">
             {project.title}
           </div>
           <div className="absolute inset-0 transform hover:scale-75 transition duration-300">
