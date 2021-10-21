@@ -43,7 +43,7 @@ export default function Projects() {
 
   const displayProjectCards = project.map(
     (project, index) =>
-      <section className='p-10 flex items-center justify-around flex-col'>
+      <section className='flex p-10 items-center justify-around flex-col'>
         <div className='mb-5 animate-pulse text-darkGray'>
           <IoIosArrowDown size={30} />
         </div>
@@ -82,7 +82,7 @@ export default function Projects() {
   return (
     <>
       <h1
-        className='mt-16 text-center text-lightBlue font-header'
+        className='mt-10 text-center font-header text-darkGray'
         id='projects'
       >
         Projects
@@ -90,7 +90,7 @@ export default function Projects() {
 
       <br />
 
-      <main className='flex flex-row flex-wrap bg-lightBlue justify-evenly items-center min-h-screen italic font-body'>
+      <main className='flex flex-row flex-wrap italic font-body  justify-evenly items-center bg-lightBlue min-h-screen'>
 
         {displayProjectCards}
 
