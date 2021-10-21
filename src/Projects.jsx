@@ -42,7 +42,7 @@ export default function Projects() {
   ];
 
   const displayProjectCards = project.map(
-    (project, index) =>
+    (project) =>
       <section className='flex p-10 items-center justify-around flex-col'>
         <div className='mb-5 animate-pulse text-darkGray'>
           <IoIosArrowDown size={30} />
