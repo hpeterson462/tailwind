@@ -11,6 +11,9 @@ module.exports = {
         'lightBlue': '#7cd6dc',
         'lightGray': '#454545',
       },
+      backgroundImage: theme => ({
+        'dots': "url('/src/assets/dots.png')",
+      }),
     },
   },
   variants: {

@@ -6,6 +6,7 @@ export default function Home() {
       <h1 className='text-7xl mt-16 font-header lg:text-8xl'>
         Heather Peterson
       </h1>
+      <div className='bg-dots bg-center bg-no-repeat min-h-screen'></div>
     </main>
   );
 }
