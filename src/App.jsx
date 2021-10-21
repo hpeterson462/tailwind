@@ -4,6 +4,7 @@ import {
   Switch,
   Route
 } from 'react-router-dom';
+import Nav from './Nav';
 import Home from './Home';
 import Projects from './Projects.jsx';
 import AboutMe from './AboutMe';
@@ -15,6 +16,7 @@ export default function App() {
   return (
     <>
       <Router>
+        <Nav />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/projects" component={Projects} />
