@@ -44,7 +44,7 @@ export default function Projects() {
   const displayProjectCards = project.map(
     (project, index) =>
       <section className='p-10 flex items-center justify-around flex-col'>
-        <div className='mb-5 animate-pulse text-lightGray'>
+        <div className='mb-5 animate-pulse text-darkGray'>
           <IoIosArrowDown size={30} />
         </div>
         <div className='h-52 w-52 relative cursor-pointer mb-5'>
@@ -72,7 +72,7 @@ export default function Projects() {
           rel='noreferrer'
           href={project.gitHubLink}
         >
-          <div className='text-lightGray hover:text-white transition duration-500 ease-in-out cursor-pointer opacity-50'>
+          <div className='text-darkGray hover:text-white transition duration-500 ease-in-out cursor-pointer opacity-50'>
             <FaGithubSquare size={30} />
           </div>
         </a>
