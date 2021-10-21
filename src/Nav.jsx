@@ -3,34 +3,34 @@ import { Link } from 'react-router-dom';
 
 export default function Nav() {
   return (
-    <nav className='mt-3 text-center font-header tracking-wide lg:tracking-widest'>
+    <nav className='pt-3 pb-3 text-center font-header tracking-wide bg-darkGray sm:p-3 lg:tracking-widest'>
       <Link
         to='/'
-        className='md:m-10 p-2 rounded-lg cursor-pointer hover:text-lightBlue transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-50'
+        className='text-lightBlue md:m-10 p-2 rounded-lg cursor-pointer hover:text-white transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-50'
       >
         Home
       </Link>
       <Link
         to='/projects'
-        className='md:m-10 p-2 rounded-lg cursor-pointer hover:text-lightBlue transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-50'
+        className='text-lightBlue md:m-10 p-2 rounded-lg cursor-pointer hover:text-white transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-50'
       >
         Projects
       </Link>
       <Link
-        to='/aboutme'
-        className='md:m-10 p-2 rounded-lg cursor-pointer hover:text-lightBlue transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-50'
-      >
-        About Me
-      </Link>
-      <Link
         to='/techstack'
-        className='md:m-10 p-2 rounded-lg cursor-pointer hover:text-lightBlue transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-50'
+        className='text-lightBlue md:m-10 p-2 rounded-lg cursor-pointer hover:text-white transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-50'
       >
         Stack
       </Link>
       <Link
+        to='/aboutme'
+        className='text-lightBlue md:m-10 p-2 rounded-lg cursor-pointer hover:text-white transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-50'
+      >
+        About Me
+      </Link>
+      <Link
         to='/contact'
-        className='md:m-10 p-2 rounded-lg cursor-pointer hover:text-lightBlue transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-50'
+        className='text-lightBlue md:m-10 p-2 rounded-lg cursor-pointer hover:text-white transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-50'
       >
         Contact
       </Link>
