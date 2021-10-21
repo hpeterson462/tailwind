@@ -5,7 +5,7 @@ import pageTrade from './assets/pageTrade.png';
 import sherlockStocks from './assets/sherlockStocks.png';
 import cumulus from './assets/cumulus.png';
 import { FaGithubSquare } from 'react-icons/fa';
-import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowDown } from 'react-icons/io';
 
 export default function Projects() {
   const project = [
@@ -43,23 +43,23 @@ export default function Projects() {
 
   const displayProjectCards = project.map(
     (project, index) =>
-      <section className="p-10 flex items-center justify-around flex-col">
-        <div className="mb-5 animate-pulse text-lightGray">
+      <section className='p-10 flex items-center justify-around flex-col'>
+        <div className='mb-5 animate-pulse text-lightGray'>
           <IoIosArrowDown size={30} />
         </div>
-        <div className="h-52 w-52 relative cursor-pointer mb-5">
-          <div className="absolute inset-0 text-center bg-white opacity-25 rounded-lg shadow-2xl">
+        <div className='h-52 w-52 relative cursor-pointer mb-5'>
+          <div className='absolute inset-0 text-center bg-white opacity-25 rounded-lg shadow-2xl'>
             {project.title}
           </div>
-          <div className="absolute inset-0 transform hover:scale-75 transition duration-300">
+          <div className='absolute inset-0 transform hover:scale-75 transition duration-300'>
             <a
-              className="h-full w-full rounded-lg shadow-2xl bg-cover bg-center ext-link"
-              target="_blank"
-              rel="noreferrer"
+              className='h-full w-full rounded-lg shadow-2xl bg-cover bg-center ext-link'
+              target='_blank'
+              rel='noreferrer'
               href={project.websiteLink}
             >
               <img
-                className="h-full w-full bg-white rounded-lg shadow-2xl bg-babyMe bg-cover"
+                className='h-full w-full bg-white rounded-lg shadow-2xl bg-babyMe bg-cover'
                 src={project.image}
                 alt={`${project.title}`}
               />
@@ -67,12 +67,12 @@ export default function Projects() {
           </div>
         </div>
         <a
-          className="ext-link"
-          target="_blank"
-          rel="noreferrer"
+          className='ext-link'
+          target='_blank'
+          rel='noreferrer'
           href={project.gitHubLink}
         >
-          <div className="text-lightGray hover:text-white transition duration-500 ease-in-out cursor-pointer opacity-50">
+          <div className='text-lightGray hover:text-white transition duration-500 ease-in-out cursor-pointer opacity-50'>
             <FaGithubSquare size={30} />
           </div>
         </a>
@@ -82,15 +82,15 @@ export default function Projects() {
   return (
     <>
       <h1
-        className="mt-16 text-center text-lightBlue font-header"
-        id="projects"
+        className='mt-16 text-center text-lightBlue font-header'
+        id='projects'
       >
         Projects
       </h1>
 
       <br />
 
-      <main className="flex flex-row flex-wrap bg-lightBlue justify-evenly items-center min-h-screen italic font-body">
+      <main className='flex flex-row flex-wrap bg-lightBlue justify-evenly items-center min-h-screen italic font-body'>
 
         {displayProjectCards}
 
