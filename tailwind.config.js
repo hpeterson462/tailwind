@@ -11,10 +11,14 @@ module.exports = {
       },
       textColor: {
         'lightBlue': '#7cd6dc',
-        'lightGray': '#454545',
+        'darkGray': '#454545',
       },
       backgroundImage: theme => ({
         'dots': "url('/src/assets/dots.png')",
+      }),
+      backgroundColor: theme => ({
+        ...theme('colors'),
+        'lightBlue': '#7cd6dc',
       }),
     },
   },
