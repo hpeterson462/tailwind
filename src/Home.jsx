@@ -6,6 +6,9 @@ export default function Home() {
       <h1 className='mt-16 font-header lg:text-8xl'>
         Heather Peterson
       </h1>
+      <h3 className='text-lightBlue font-body'>
+        Frontend Software Developer
+      </h3>
       <div className='bg-dots bg-center bg-no-repeat min-h-screen'></div>
     </main>
   );
