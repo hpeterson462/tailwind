@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin');
+
 module.exports = {
   purge: false,
   darkMode: false, // or 'media' or 'class'
@@ -19,5 +21,9 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [plugin(function ({ addBase, theme }) {
+    addBase({
+      'h1': { fontSize: theme('fontSize.7xl') },
+    })
+  })],
 }
