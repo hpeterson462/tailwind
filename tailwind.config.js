@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        header: ['Raleway', 'sans-serif'],
-        body: ['Lora', 'serif']
+        'header': ['Raleway', 'ui-sans-serif'],
+        'body': ['Lora', 'ui-serif']
       },
       textColor: {
         'lightBlue': '#7cd6dc',
