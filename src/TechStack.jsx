@@ -51,13 +51,13 @@ const stack = [
 
 export default function TechStack() {
   const displayTechStack = stack.map((stack) =>
-    <section className="p-5 flex items-center justify-around">
-      <div className="h-52 w-52 relative cursor-pointer mb-5">
-        <div className="absolute text-center inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
+    <section className='flex p-5 items-center justify-around'>
+      <div className='relative h-52 w-52 cursor-pointer mb-5'>
+        <div className='absolute text-center inset-0 bg-white opacity-25 rounded-lg shadow-2xl'>
           {stack.subtitle}
         </div>
-        <div className="absolute inset-0 transform hover:translate-y-10 transition duration-300">
-          <div className="flex justify-center items-center h-full w-full bg-white rounded-lg shadow-2xl">
+        <div className='absolute inset-0 transform hover:translate-y-10 transition duration-300'>
+          <div className='flex justify-center items-center h-full w-full bg-white rounded-lg shadow-2xl'>
             {stack.icon}
           </div>
         </div>
@@ -69,14 +69,13 @@ export default function TechStack() {
     <>
       <h1
         className='mt-10 text-center font-header text-darkGray'
-        id='projects'
       >
         Tech Stack
       </h1>
 
       <br />
 
-      <main className='flex flex-row flex-wrap italic font-body  justify-evenly items-center bg-lightBlue min-h-screen'>
+      <main className='flex flex-row flex-wrap italic font-body justify-evenly items-center bg-lightBlue min-h-screen'>
 
         {displayTechStack}
 

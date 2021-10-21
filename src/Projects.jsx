@@ -43,12 +43,12 @@ export default function Projects() {
 
   const displayProjectCards = project.map(
     (project) =>
-      <section className='flex p-10 items-center justify-around flex-col'>
+      <section className='flex flex-col p-5 items-center justify-around'>
         <div className='mb-5 animate-pulse text-darkGray'>
           <IoIosArrowDown size={30} />
         </div>
-        <div className='h-52 w-52 relative cursor-pointer mb-5'>
-          <div className='absolute inset-0 text-center bg-white opacity-25 rounded-lg shadow-2xl'>
+        <div className='relative h-52 w-52 cursor-pointer mb-5'>
+          <div className='absolute text-center inset-0 bg-white opacity-25 rounded-lg shadow-2xl'>
             {project.title}
           </div>
           <div className='absolute inset-0 transform hover:scale-75 transition duration-300'>
@@ -72,7 +72,7 @@ export default function Projects() {
           rel='noreferrer'
           href={project.gitHubLink}
         >
-          <div className='text-darkGray hover:text-white transition duration-500 ease-in-out cursor-pointer opacity-50'>
+          <div className='text-darkGray hover:text-white transition duration-500 ease-in-out cursor-pointer opacity-75'>
             <FaGithubSquare size={30} />
           </div>
         </a>
@@ -83,14 +83,13 @@ export default function Projects() {
     <>
       <h1
         className='mt-10 text-center font-header text-darkGray'
-        id='projects'
       >
         Projects
       </h1>
 
       <br />
 
-      <main className='flex flex-row flex-wrap italic font-body  justify-evenly items-center bg-lightBlue min-h-screen'>
+      <main className='flex flex-row flex-wrap italic font-body justify-evenly items-center bg-lightBlue'>
 
         {displayProjectCards}
 
