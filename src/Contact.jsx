@@ -4,7 +4,6 @@ import { SiLinkedin } from 'react-icons/si';
 import { ImFileText } from 'react-icons/im';
 import { FaGithubSquare } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
-import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 
 export default function Contact() {
   const handleLiClick = (e) => {
@@ -31,15 +30,25 @@ export default function Contact() {
         <h3 className='m-1'>
           Get in touch!
         </h3>
-        <div className="flex items-center justify-center p-5 pt-1">
-          <div className="p-1 rounded hover:text-red-400 hover:shadow-md cursor-pointer transition duration-500 ease-in-out">
+        <div className='flex items-center justify-center p-5 pt-1'>
+          <div className='p-1 rounded hover:text-red-400 hover:shadow-md cursor-pointer transition duration-500 ease-in-out'>
             <FaGithubSquare size={45} onClick={handleGitClick} />
           </div>
-          <div className="p-1 rounded hover:text-red-400 hover:shadow-md cursor-pointer transition duration-500 ease-in-out">
+          <div className='p-1 rounded hover:text-red-400 hover:shadow-md cursor-pointer transition duration-500 ease-in-out'>
             <SiLinkedin size={40} onClick={handleLiClick} />
           </div>
-          <span className="p-2 text-2xl font-body">
+          <span className='p-2 text-2xl font-body'>
             /hpeterson462
+          </span>
+        </div>
+        <div className='flex items-center justify-center p-5 pt-1'>
+          <div className='p-1 rounded hover:text-red-400 hover:shadow-md cursor-pointer transition duration-500 ease-in-out'>
+            <Link to='/resume'>
+              <ImFileText size={40} />
+            </Link>
+          </div>
+          <span className="pl-2 text-2xl font-body">
+            Resume
           </span>
         </div>
       </main>
