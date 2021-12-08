@@ -30,7 +30,7 @@ export default function Contact() {
         <h3 className='m-1'>
           Get in touch!
         </h3>
-        <div className='flex items-center justify-center p-5 pt-1'>
+        <div className='flex items-center justify-center p-5 pt-3'>
           <div className='p-1 rounded hover:text-red-400 hover:shadow-md cursor-pointer transition duration-500 ease-in-out'>
             <FaGithubSquare size={45} onClick={handleGitClick} />
           </div>
@@ -47,7 +47,7 @@ export default function Contact() {
               <ImFileText size={40} />
             </Link>
           </div>
-          <span className="pl-2 text-2xl font-body">
+          <span className="p-2 text-2xl font-body">
             Resume
           </span>
         </div>
