@@ -27,7 +27,7 @@ export default function Contact() {
       <br />
 
       <main className='flex flex-row flex-wrap italic font-body justify-evenly items-center bg-lightBlue'>
-        <h3 className='m-1'>
+        <h3 className='m-1 mb-5'>
           Get in touch!
         </h3>
         <div className='flex items-center justify-center p-5 pt-3'>
