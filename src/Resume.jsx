@@ -15,17 +15,18 @@ export default function Resume() {
   }
 
   return (
-    <Document
-      className=''
-      file={PDF}
-      onContextMenu={handleWindow}
-    >
-      <Page
-        pageNumber={1}
-        renderMode='svg'
-        //width: 100vw; max-width: 1000px
-        width={Math.min(width * 1, 1000)}
-      />
-    </Document >
+    <div className='mt-10 mb-0 place-content-center'>
+      <Document
+        file={PDF}
+        onContextMenu={handleWindow}
+      >
+        <Page
+          pageNumber={1}
+          renderMode='svg'
+          //width: 100vw; max-width: 1000px
+          width={Math.min(width * 1, 1000)}
+        />
+      </Document >
+    </div>
   );
 }
