@@ -15,7 +15,7 @@ export default function Resume() {
   }
 
   return (
-    <div className='mt-10 mb-0 place-content-center'>
+    <div className='flex mt-8 items-center justify-center'>
       <Document
         file={PDF}
         onContextMenu={handleWindow}

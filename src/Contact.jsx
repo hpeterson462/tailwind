@@ -62,6 +62,9 @@ export default function Contact() {
           </span>
         </div>
       </main>
+      <div className='fixed overflow-hidden left-0 right-0'>
+        <footer className='bg-dots bg-center bg-no-repeat min-h-screen'></footer>
+      </div>
     </>
   );
 }
